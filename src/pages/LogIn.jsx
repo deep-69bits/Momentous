@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useHistory } from "react-router-dom";
 import { useEffect } from 'react';
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { motion } from "framer-motion";
 
 
 const LogIn = () => {
@@ -60,7 +61,13 @@ const LogIn = () => {
     });
   })
   return (
-    <div>
+    <motion.div
+    className="container text-center"
+    initial={{ opacity: 0, y: "-1000px" }}
+    animate={{ opacity: 1, y:"0" }}
+    exit={{ opacity: 1, y: "100px"}}
+    transition={{ duration: 0.5 }}
+    >
       <section className="gradient-form h-full min-h-screen  flex items-center bg-neutral-200">
         <ToastContainer />
         <div className="container h-full p-10 m-auto">
@@ -180,7 +187,7 @@ const LogIn = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   )
 }
 

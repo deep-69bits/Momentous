@@ -7,9 +7,10 @@ import Form from './pages/Form';
 import SignUp from './pages/SignUp';
 import LogIn from './pages/LogIn';
 import ForgetPassword from './pages/ForgetPassword'
+import { AnimatePresence } from "framer-motion";
 function App() {
   return (
-    
+    <AnimatePresence mode='wait'>
       <BrowserRouter>
         <Router>
           <div className="App">
@@ -42,6 +43,7 @@ function App() {
           </div>
         </Router>
       </BrowserRouter>
+      </AnimatePresence>
   );
 }
 

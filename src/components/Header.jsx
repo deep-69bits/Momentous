@@ -43,7 +43,7 @@ function Header() {
     });
   }
   return (
-    <nav className="bg-pink-500 sm:full m-auto   mt-0  " >
+    <nav className="bg-pink-500 sm:full m-auto paratext   mt-0  " >
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center w-full">

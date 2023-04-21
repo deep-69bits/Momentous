@@ -6,7 +6,7 @@ export default function Countdown({date,address}){
     return(
         
         <div className="grid grid-flow-row auto-rows-max items-center bg-[#f9d9eb]">
-            <div className="pt-10 text-4xl text-pink-700 text-center pb-8 font-serif">The Countdown</div>
+            <div className="pt-10 text-4xl text-pink-700 text-center pb-8 fonthead">The Countdown</div>
             <CountdownTimer deadline={deadline}/>
             <div className="pt-10 text-4xl text-purple-950 text-center mt-0 pb-10 font-serif">
               <p className="text-2xl fonthead text-black text-center">Meet Us At</p>

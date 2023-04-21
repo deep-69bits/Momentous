@@ -5,7 +5,7 @@ const HomeGallery = () => {
     <div>
       <div className='lg:px-10 px-0 py-20'>
       <h1 className='font-light text-6xl text-[#0404c2] fonthead' >The Gallery</h1>
-       <h2 className='mt-5'>Enjoy the most cherishable moments of the event that are  <br /> hand-curated and arranged in a picture gallery. </h2>
+       <h2 className='mt-5 paratext'>Enjoy the most cherishable moments of the event that are  <br /> hand-curated and arranged in a picture gallery. </h2>
        <div className='grid grid-flow-row lg:grid-cols-2 grid-cols-1 my-5 w-full '>
          <div className='lg:mr-5 mr-0'>
            <img  src="./images/homepage1 images/Rectangle 1.png" alt="" className='my-2 ' />
