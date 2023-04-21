@@ -53,16 +53,16 @@ function Page1() {
         data.push(docSnap.data().pics[6] || "./images/save the date images/Rectangle 67.png")
         setTopgalley(data)
         setIntinerary(docSnap.data()?.itineraryfields )
-        setTimeout(function () { setSpineer(false) }, 1000);
+        
 
       } else {
         // docSnap.data() will be undefined in this case
         console.log("No such document!");
-        setSpineer(false)
+    
       }
     }
     retrivedata()
-
+    setTimeout(function () { setSpineer(false) }, 4000);
   }, [])
   return (
     <>
