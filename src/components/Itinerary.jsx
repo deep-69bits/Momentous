@@ -31,14 +31,14 @@ export default function Itinerary({date,itinerary}){
 
             <h1 className=" text-7xl fonthead ">Itinerary</h1>
 
-            <h2 className="my-10 text-2xl border-b-[2px] inline-block py-2 border-pink-500" >{weekday[D.getDay()]},{Month[D.getMonth()]}{D.getDate()}</h2>
+            <h2 className="my-10 text-2xl border-b-[2px] inline-block py-2 fonthead border-pink-500" >{weekday[D.getDay()]},{Month[D.getMonth()]}{D.getDate()}</h2>
              
              {
                 itinerary.map((item,index)=>{
                     return(
-                        <div className="flex mb-10">
+                        <div className="flex mb-10 paratext">
                          <div className="w-1/3 "> 
-                         <h2 className="text-xl text-pink-500">
+                         <h2 className="text-xl  text-pink-500">
                          {item.time}
                          </h2>
                          </div>

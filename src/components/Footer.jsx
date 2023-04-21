@@ -52,7 +52,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
 
-    <footer className="footer text-white relative pt-1 ">
+    <footer className="footer text-white relative pt-1  paratext">
       <div className="container mx-auto lg:px-56 sm:px-0">
 
         <div className="sm:flex sm:mt-8">

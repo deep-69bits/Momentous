@@ -3,11 +3,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
 @font-face {
     font-family: Impoerted1;
     src: url('./Fonts/Gilroy-MediumItalic.ttf');
 }
+@font-face {
+    font-family: Impoerted2;
+    src: url('./Fonts/Gilroy-SemiBoldItalic.ttf');
+}
+@font-face {
+    font-family: Impoerted3;
+    src: url('./Fonts/Yellowtail-Regular.ttf');
+}
+
 .fonthead{
    font-family: Impoerted1;
-   
+   font-weight: 100;
+}
+.paratext{
+    font-family: Impoerted2;
+}
+.specialtext{
+    font-family: Impoerted3;
+}
+.whatsapp{
+    position: fixed;
+    z-index: 100;
+    width: 60px;
+    height: 60px;   
+    left: 20px;
+    top: 650px;
 }

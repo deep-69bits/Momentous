@@ -1,7 +1,7 @@
 import React from "react";
 export default function RSVP(){
     return(
-        <div class="grid md:grid-cols-2 font-serif">
+        <div class="grid md:grid-cols-2 paratext">
             <img src="./images/save the date images/rsvp.png" className="md:w-full md:h-screen w-0 h-0 object-cover mr-0"/>
             <div className=" mx-20 flex my-40 ">
              <div>

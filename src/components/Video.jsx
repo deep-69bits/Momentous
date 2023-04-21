@@ -36,7 +36,7 @@ const Video = () => {
 
         </Swiper>
       </div>
-      <div className='text-center   flex z-50  justify-center items-center'>
+      <div className='text-center   flex z-40  justify-center items-center'>
         <button className='transition-all animate-bounce z-50 duration-500 hover:scale-125 text-4xl rounded-full m-auto  h-14 w-14 translate-y-[-10px] bg-pink-500 text-white'> <Link to="about" spy={true} smooth={true} offset={50} duration={500}>	&darr; </Link> </button>
       </div>
     </div>
