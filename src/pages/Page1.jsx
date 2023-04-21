@@ -53,7 +53,9 @@ function Page1() {
         data.push(docSnap.data().pics[5] || "./images/save the date images/Rectangle 67.png")
         data.push(docSnap.data().pics[6] || "./images/save the date images/Rectangle 67.png")
         setTopgalley(data)
+
         setIntinerary(docSnap.data()?.itineraryfields)
+
 
 
       } else {
