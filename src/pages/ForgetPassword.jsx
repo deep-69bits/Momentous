@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useHistory } from "react-router-dom";
 import { useEffect } from 'react';
 import { signInWithPopup, sendPasswordResetEmail,GoogleAuthProvider } from "firebase/auth";
-
+import { motion } from "framer-motion";
 
 const ForgetPassword = () => {
   const history = useHistory();
@@ -46,7 +46,12 @@ const ForgetPassword = () => {
     });
   })
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0, y: "-1000px",x:"-1000px" }}
+    animate={{ opacity: 1, y:"0",x:"0px" }}
+    exit={{ opacity: 1, y: "1000px",x:"1000px"}}
+    transition={{ duration: 0.5 }}
+    >
       <section className="gradient-form h-full min-h-screen  flex items-center bg-neutral-200">
         <ToastContainer />
         <div className="container h-full p-10 m-auto">
@@ -141,7 +146,7 @@ const ForgetPassword = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   )
 }
 

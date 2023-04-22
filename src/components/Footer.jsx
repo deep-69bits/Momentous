@@ -68,10 +68,10 @@ const Footer = () => {
             <div className="flex flex-col">
             <span className="font-semibold  uppercase mt-4 md:mt-0 mb-2">Quick Links</span>
             <div className="grid grid-flow-row grid-cols-2 gap-y-4 gap-28">
-            <span className="my-2"><a href="#" className=" text-md hover:text-blue-500">Home</a></span>
-            <span className="my-2"><a href="#" className=" text-md hover:text-blue-500">PhotoBooth</a></span>
+            <span className="my-2"><a href="/" className=" text-md hover:text-blue-500">Home</a></span>
+        
             <span className="my-2"><a href="#" className=" text-md hover:text-blue-500"><Link to={'/form'}>Save The Date</Link></a></span>
-            <span className="my-2"><a href="#" className=" text-md hover:text-blue-500">Save The Pricing</a></span>  
+        
             </div>
             </div>
             <div className="flex flex-col">

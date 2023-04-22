@@ -58,10 +58,10 @@ const SignUp = () => {
   })
   return (
     <motion.div
-    className="container text-center"
+    className=""
     initial={{ opacity: 0, y: "-1000px" }}
     animate={{ opacity: 1, y:"0" }}
-    exit={{ opacity: 1, y: "100px"}}
+    exit={{ opacity: 1, y: "1000px"}}
     transition={{ duration: 0.5 }}
     >
     <section className="gradient-form h-full min-h-screen  flex items-center bg-neutral-200">

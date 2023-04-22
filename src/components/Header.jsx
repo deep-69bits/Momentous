@@ -105,10 +105,10 @@ function Header() {
 
       <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="/" className="text-white hover:bg-[#dd2562] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-          <a href="/gallery" className="text-white hover:bg-[#dd2562] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
-          <a href="/about" className="text-white hover:bg-[#dd2562] hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-          <a href="/contactUs" className="text-white hover:bg-[#dd2562] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
+        <a to="/" href='/'  className=" hover:bg-[#dd2562] hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Home</a>
+        <Link  className=" hover:bg-[#dd2562] hover:text-white px-3 cursor-pointer py-2 rounded-md  text-white font-semibold text-lg" to="gallery" spy={true} smooth={true} offset={50} duration={500}>	Gallery </Link>
+        <Link  className=" hover:bg-[#dd2562] hover:text-white px-3 cursor-pointer py-2 rounded-md  text-white font-semibold text-lg" to="about" spy={true} smooth={true} offset={50} duration={500}>	About </Link>
+        <a to="/" href='/form'  className=" hover:bg-[#dd2562] hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Save the date</a>
           {
             loged ?
               <button onClick={signout} className="hover:bg-[#dd2562] border border-white rounded py-1 px-6  right-8  text-white font-semibold text-lg">Sign out</button>
