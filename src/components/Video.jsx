@@ -3,8 +3,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {Link} from 'react-scroll'
-import {Autoplay, Pagination, Navigation } from "swiper";
+import { Link } from 'react-scroll'
+import { Autoplay, Pagination, Navigation } from "swiper";
 const Video = () => {
   return (
     <div >
@@ -14,24 +14,24 @@ const Video = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 32000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           pagination={{
             clickable: true,
           }}
-          
+
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper  -z-20"
         >
           <SwiperSlide>
-            <video className='m-auto w-full lg:h-[700px]   sm:w-full lg:mt-20 mt-0' autoPlay loop src="https://static.videezy.com/system/resources/previews/000/033/226/original/bride12.mp4"></video>
+            <video className='m-auto w-full lg:h-[700px]   sm:w-full lg:mt-20 mt-0' muted autoPlay loop src="https://static.videezy.com/system/resources/previews/000/004/893/original/Wedding_6_-_Slideshow.mp4"></video>
           </SwiperSlide>
           <SwiperSlide>
             <video className='m-auto w-full lg:h-[700px]   sm:w-full lg:mt-20 mt-0' muted autoPlay loop src="https://static.videezy.com/system/resources/previews/000/004/893/original/Wedding_6_-_Slideshow.mp4"></video>
           </SwiperSlide>
           <SwiperSlide>
-            <video className='m-auto w-full lg:h-[700px]   sm:w-full lg:mt-20 mt-0' autoPlay loop src="https://static.videezy.com/system/resources/previews/000/000/168/original/Record.mp4"></video>
+            <video className='m-auto w-full lg:h-[700px]   sm:w-full lg:mt-20 mt-0' muted autoPlay loop src="https://static.videezy.com/system/resources/previews/000/004/893/original/Wedding_6_-_Slideshow.mp4"></video>
           </SwiperSlide>
 
         </Swiper>
