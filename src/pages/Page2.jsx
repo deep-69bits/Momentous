@@ -15,8 +15,10 @@ function Page2() {
       <SpiralImages/>
       <Pricing/>
       <PhotoGallery/>
-      {/* <FeedbackSlider/> */}
+      <FeedbackSlider/> 
+      <div className="bg-yellow-500">
       <Footer/>
+      </div>
       </>
     );
   }

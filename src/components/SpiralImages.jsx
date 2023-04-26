@@ -53,30 +53,27 @@ export default function SpiralImages() {
   return (
     <div
       className="relative grid grid-rows-2 pt-20 bg-contain bg-center bg-blend-lighten backdrop-opacity-10 backdrop-invert bg-white/80 border border-b-black"
-      style={{
-        backgroundImage:
-          "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh6.googleusercontent.com%2Fproxy%2FMjNpLpC0yaXgqmjGiFvuaj6hSvXe4zR-x5TtZQByZ_Mu6XLAx2ijTMoUZMF4toUSEJs22GsP7zXolEqMBaQIWDbSoyeAuYezFPyi2vW5ND_dLy8DR3kTwb8qjaEZZ0ke%3Dw1200-h630-p-k-no-nu&f=1&nofb=1&ipt=4a30e14aac916d45a57eafe4b348f4d54edcc07ce2482992ae620e365f51be00&ipo=images)"
-      }}
+      
     >
       <div className="row-span-2 grid md:grid-cols-5 grid-cols-2 gap-x-8 md:mx-40 mx-4 md:mt-8 md:pb-2">
         <img
-          src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+          src="./images/photobooth images/img2.png"
           alt="Image 1"
           className="w-full md:w-[80%] transform md:-rotate-6 mb-10 object-cover rounded-2xl"
         />
         
         <img
-          src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+          src="./images/photobooth images/img1.png"
           alt="Image 3"
           className="w-full md:w-[80%] transform md:rotate-6 mb-10 object-cover rounded-2xl"
         />
         <img
-          src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+          src="./images/photobooth images/img4.png"
           alt="Image 4"
           className="w-full md:w-[80%] transform md:-rotate-6 mb-10 object-cover rounded-2xl"
         />
         <img
-          src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+          src="./images/photobooth images/img5.png"
           alt="Image 4"
           className="w-full md:w-[80%] transform md:rotate-6 mb-10 object-cover rounded-2xl"
         />
@@ -86,7 +83,9 @@ export default function SpiralImages() {
           className="w-0 md:w-[80%] transform md:-rotate-6 mb-10 object-cover rounded-2xl"
         />
         </div>
-        <p className="md:text-2xl  text-black text-center pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, doloremque.deserunt.<br/> Sint id necessitatibus, blanditiis repellendus corporis.</p>
+        <p className="paratext  text-black text-center pb-10">
+        Enjoy the most cherishable moments of the events that are <br /> hand-curated and arranged in a picture gallery.
+        </p>
         </div>
   )
 }

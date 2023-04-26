@@ -38,3 +38,20 @@
     left: 20px;
    bottom: 20px;
 }
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #735401;
+    background-color: #735401;
+    right:10px;
+    box-shadow: 2px 2px 2px 2px #ffffff;
+    border-radius: 100%;
+    
+    scale: 80%;
+    padding: 30px;
+    color: white !important;
+    fill: white !important;
+    stroke: white !important;
+}
+.clip{
+    clip-path: polygon(0 8%, 94% 0, 100% 100%, 0% 100%);    
+}

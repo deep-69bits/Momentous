@@ -1,30 +1,64 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { FreeMode, Pagination,Navigation } from "swiper";
 
 const FeedbackSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const feedbacks = [
-    {
-      id: 1,
-      name: "John Doe",
-      job: "Web Developer",
-      feedback:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at mollis massa. Nam ullamcorper justo non sem efficitur, non fringilla augue interdum. Donec non mi velit.",
-    },
-    {
-      id: 2,
-      name: "Jane Doe",
-      job: "UX Designer",
-      feedback:
-        "Fusce at suscipit augue, eu ultricies ante. Nam tincidunt risus quis enim auctor, id interdum nunc lobortis. Donec tincidunt lorem sit amet dolor ullamcorper, sit amet pretium magna venenatis.",
-    },
-    {
-      id: 3,
-      name: "Bob Smith",
-      job: "Graphic Designer",
-      feedback:
-        "Praesent in risus id sapien ultrices sollicitudin. Nulla dictum aliquet velit, vel gravida velit maximus eget. Fusce in justo nisl. Donec ultrices elit elit, vel dapibus sapien fermentum sed.",
-    },
+     {
+      title:'"Really liked the service of the photobooth!"',
+      Desc:"The service is the best. We've movedall of our meetings to this new platform nad it's made them all better and effcient",
+      name:"Adam Smith",
+      image:"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
+      work:"Web Designer at Spotify"
+     },
+     {
+      title:'"Really liked the service of the photobooth!"',
+      Desc:"The service is the best. We've movedall of our meetings to this new platform nad it's made them all better and effcient",
+      name:"Adam Smith",
+      image:"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
+      work:"Web Designer at Spotify"
+     }, {
+      title:'"Really liked the service of the photobooth!"',
+      Desc:"The service is the best. We've movedall of our meetings to this new platform nad it's made them all better and effcient",
+      name:"Adam Smith",
+      image:"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
+      work:"Web Designer at Spotify"
+     }, {
+      title:'"Really liked the service of the photobooth!"',
+      Desc:"The service is the best. We've movedall of our meetings to this new platform nad it's made them all better and effcient",
+      name:"Adam Smith",
+      image:"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
+      work:"Web Designer at Spotify"
+     }, {
+      title:'"Really liked the service of the photobooth!"',
+      Desc:"The service is the best. We've movedall of our meetings to this new platform nad it's made them all better and effcient",
+      name:"Adam Smith",
+      image:"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
+      work:"Web Designer at Spotify"
+     }, {
+      title:'"Really liked the service of the photobooth!"',
+      Desc:"The service is the best. We've movedall of our meetings to this new platform nad it's made them all better and effcient",
+      name:"Adam Smith",
+      image:"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
+      work:"Web Designer at Spotify"
+     }, {
+      title:'"Really liked the service of the photobooth!"',
+      Desc:"The service is the best. We've movedall of our meetings to this new platform nad it's made them all better and effcient",
+      name:"Adam Smith",
+      image:"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
+      work:"Web Designer at Spotify"
+     }, {
+      title:'"Really liked the service of the photobooth!"',
+      Desc:"The service is the best. We've movedall of our meetings to this new platform nad it's made them all better and effcient",
+      name:"Adam Smith",
+      image:"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
+      work:"Web Designer at Spotify"
+     },
   ];
 
   const handlePrev = () => {
@@ -36,38 +70,83 @@ const FeedbackSlider = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h2 className="text-2xl font-bold mb-4">What Our Customers Say</h2>
-      <div className="flex justify-between items-center w-4/5 mb-4">
-        <button
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-          onClick={handlePrev}
-        >
-          Prev
-        </button>
-        <button
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-          onClick={handleNext}
-        >
-          Next
-        </button>
-      </div>
-      <div className="flex items-center">
-        {feedbacks.map((feedback, index) => (
-          <div
-            key={feedback.id}
-            className={`${
-              index === currentIndex ? "opacity-100" : "opacity-0"
-            } transition-opacity duration-500 absolute`}
-          >
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <p className="text-gray-500 italic mb-2">{feedback.feedback}</p>
-              <p className="text-gray-800 font-bold">{feedback.name}</p>
-              <p className="text-gray-500">{feedback.job}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="py-32 px-10 ">
+    <h1 className='px-10 font-light  text-[#0404c2] fonthead text-6xl ' >About Us</h1>
+    <h3 className='px-10 paratext' >Checkout the valuable feedbacks and reviwes by our customer</h3>
+     <div className="my-16 hidden lg:block">
+     <img src="./images/photobooth images/photobooth2.png"
+      className="absolute h-[713px] w-[500px] translate-y-[-244px] -z-30 right-0"   alt="" />
+     <Swiper
+    slidesPerView={3}
+    spaceBetween={30}
+    loop={true}
+    freeMode={true}
+    navigation={true}
+   
+    modules={[FreeMode, Pagination, Navigation]}
+    className="mySwiper"
+  >
+    {
+      feedbacks.map((item,index)=>{
+        return(
+          <SwiperSlide>
+             <div className="py-7 px-10 rounded-lg border-[3px] bg-gray-100 ">
+              <h1 className="text-yellow-700 py-2 text-xl  ">{item.title}</h1>
+              <h2 className="py-2 text-[15px] ">{item.Desc}</h2>
+
+               <div className="flex my-10 mx-3">
+                <div> 
+                <img src={item.image} className="rounded-full w-14 h-14" alt="" />
+                </div>
+                <div>
+                 <h2 className=" px-4 text-md">{item.name}</h2>
+                 <h2 className="px-4 text-sm">{item.work}</h2>
+                </div>
+               </div>
+             </div>
+          </SwiperSlide>
+        )
+      })
+    }
+   
+  </Swiper>
+  </div>
+  <div className="my-16 block lg:hidden ">
+     <Swiper
+    slidesPerView={1}
+    spaceBetween={30}
+    loop={true}
+    freeMode={true}
+    navigation={true}
+   
+    modules={[FreeMode, Pagination, Navigation]}
+    className="mySwiper"
+  >
+    {
+      feedbacks.map((item,index)=>{
+        return(
+          <SwiperSlide>
+             <div className="py-7 px-10 rounded-lg border-[3px] bg-gray-100 ">
+              <h1 className="text-yellow-700 py-2 text-xl  ">{item.title}</h1>
+              <h2 className="py-2 text-[15px] ">{item.Desc}</h2>
+
+               <div className="flex my-10 mx-3">
+                <div> 
+                <img src={item.image} className="rounded-full w-14 h-14" alt="" />
+                </div>
+                <div>
+                 <h2 className=" px-4 text-md">{item.name}</h2>
+                 <h2 className="px-4 text-sm">{item.work}</h2>
+                </div>
+               </div>
+             </div>
+          </SwiperSlide>
+        )
+      })
+    }
+   
+  </Swiper>
+  </div>
     </div>
   );
 };
