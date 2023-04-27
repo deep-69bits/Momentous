@@ -59,7 +59,9 @@ const Footer = () => {
           <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
             <div className="flex flex-col">
               <span className="font-light  text-6xl uppercase mb-2">
+              <a href="/">
               <img className="w-20 h-20 scale-[300%] translate-x-10" src="https://ik.imagekit.io/cmef8hxb6/1_Transparent_Image_VWmbhlojN.png?updatedAt=1681756446542" alt="" />
+              </a>
               </span>
               <span className="my-2"><a href="#" className=" text-md hover:text-blue-500">+1(7635) 547-12-97</a></span>
               <span className="my-2"><a href="#" className="  text-md hover:text-blue-500">support@lift.agency</a></span>
@@ -70,7 +72,8 @@ const Footer = () => {
             <div className="grid grid-flow-row grid-cols-2 gap-y-4 gap-28">
             <span className="my-2"><a href="/" className=" text-md hover:text-blue-500">Home</a></span>
         
-            <span className="my-2"><a href="#" className=" text-md hover:text-blue-500"><Link to={'/form'}>Save The Date</Link></a></span>
+            <span className="my-2"><a href="#" className=" text-md hover:text-blue-500"><Link to={'/invite'}>Save The Date</Link></a></span>
+            <span className="my-2"><a href="#" className=" text-md hover:text-blue-500"><Link to={'/photobooth'}>Photo Booth</Link></a></span>
         
             </div>
             </div>

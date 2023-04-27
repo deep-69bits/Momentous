@@ -20,7 +20,7 @@ function App() {
                 <Route exact path="/">
                   <Page3/>
                 </Route>
-                <Route path="/page2">
+                <Route path="/photobooth">
                   <Page2/>
                 </Route>
                 <Route path="/invite">

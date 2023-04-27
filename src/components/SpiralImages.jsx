@@ -51,41 +51,71 @@ import React from "react";
 
 export default function SpiralImages() {
   return (
+    <div>
+    <h1 className="-z-50 top-20 opacity-40 fonthead text-[200px] text-yellow-600 absolute text-center right-72">PhotoBooth</h1>
+    <img src="./Thread.png" className="absolute z-20 top-36" alt="" />
     <div
-      className="relative grid grid-rows-2 pt-20 bg-contain bg-center bg-blend-lighten backdrop-opacity-10 backdrop-invert bg-white/80 border border-b-black"
-      
-    >
-      <div className="row-span-2 grid md:grid-cols-5 grid-cols-2 gap-x-8 md:mx-40 mx-4 md:mt-8 md:pb-2">
-        <img
-          src="./images/photobooth images/img2.png"
-          alt="Image 1"
-          className="w-full md:w-[80%] transform md:-rotate-6 mb-10 object-cover rounded-2xl"
-        />
+      className="pt-60 z-20 relative grid grid-rows-2  bg-contain bg-center  "
+    > 
+      <div  >
+      <div className="row-span-2 grid md:grid-cols-5 grid-cols-2 gap-x-8 md:mx-10 mx-4 md:mt-8 md:pb-2">
+
+      <div className="translate-y-[-30px]">
+      <img src="./clip.png" className="absolute translate-y-[-40px] rotate-[320deg] translate-x-40 z-50 h-24 " alt="" />
+      <img
+      src="./images/photobooth images/img2.png"
+      alt="Image 1"
+      className="w-full z-40 md:w-[100%] transform md:-rotate-6 mb-10 object-cover rounded-2xl"
+      />
+      </div>
         
+      <div className="lg:translate-x-8 translate-x-0">
+      <img src="./clip.png" className="absolute translate-y-[-40px] rotate-[360deg] sm:translate-x-2 lg:translate-x-16 z-50 h-24 " alt="" />
+      <img
+      src="./images/photobooth images/img1.png"
+      alt="Image 3"
+      className="w-full z-40 md:w-[100%] transform md:rotate-6 mb-10 object-cover rounded-2xl"
+      />
+      </div>
+
+        <div className="translate-y-10">
+      <img src="./clip.png" className="absolute translate-y-[-40px] rotate-[360deg] lg:translate-x-52 translate-x-0 z-50 h-24 " alt="" />
+
         <img
-          src="./images/photobooth images/img1.png"
-          alt="Image 3"
-          className="w-full md:w-[80%] transform md:rotate-6 mb-10 object-cover rounded-2xl"
+        src="./images/photobooth images/img4.png"
+        alt="Image 4"
+        className="w-full z-40 md:w-[100%] transform md:-rotate-6 mb-10 object-cover rounded-2xl"
         />
+        </div>
+
+        <div>
+      <img src="./clip.png" className="absolute translate-y-[-50px] rotate-[320deg] lg:translate-x-28 translate-x-0 z-50 h-24 " alt="" />
+
         <img
-          src="./images/photobooth images/img4.png"
-          alt="Image 4"
-          className="w-full md:w-[80%] transform md:-rotate-6 mb-10 object-cover rounded-2xl"
+        src="./images/photobooth images/img5.png"
+        alt="Image 4"
+        className="w-full z-40 md:w-[100%] transform md:rotate-6 mb-10 object-cover rounded-2xl"
         />
+        </div>
+
+        <div>
+      <img src="./clip.png" className="absolute hidden lg:block translate-y-[-30px] rotate-[360deg] translate-x-0 z-50 h-24 " alt="" />
+
         <img
-          src="./images/photobooth images/img5.png"
-          alt="Image 4"
-          className="w-full md:w-[80%] transform md:rotate-6 mb-10 object-cover rounded-2xl"
+        src="./images/photobooth images/img3.png"
+        alt="Image 4"
+        className="w-0 md:w-[100%] z-40 transform md:-rotate-6 mb-10 object-cover rounded-2xl"
         />
-        <img
-          src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
-          alt="Image 4"
-          className="w-0 md:w-[80%] transform md:-rotate-6 mb-10 object-cover rounded-2xl"
-        />
+        </div>
+
+
+        </div>
+
         </div>
         <p className="paratext  text-black text-center pb-10">
         Enjoy the most cherishable moments of the events that are <br /> hand-curated and arranged in a picture gallery.
         </p>
+        </div>
         </div>
   )
 }

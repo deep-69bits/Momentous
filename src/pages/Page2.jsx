@@ -14,8 +14,12 @@ function Page2() {
       <Header2/>
       <SpiralImages/>
       <Pricing/>
+      <section id='gallery'>
       <PhotoGallery/>
+      </section>
+      <section id='about'>
       <FeedbackSlider/> 
+      </section>
       <div className="bg-yellow-500">
       <Footer/>
       </div>

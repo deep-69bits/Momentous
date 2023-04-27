@@ -78,10 +78,12 @@ const SignUp = () => {
               <div className="md:mx-6 md:p-12">
                 
                 <div className="text-center bg-white text-black">
-                  <img
-                    className="mx-auto w-48"
-                    src="https://ik.imagekit.io/cmef8hxb6/1_Transparent_Image_VWmbhlojN.png?updatedAt=1681756446542"
-                    alt="logo" />
+                <a href="/">
+                <img
+                className="mx-auto w-56"
+                src="https://ik.imagekit.io/cmef8hxb6/1_Transparent_Image_VWmbhlojN.png?updatedAt=1681756446542"
+                alt="logo" />
+                </a>
                  
                 </div>
 
