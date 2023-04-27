@@ -67,7 +67,7 @@ function Header2() {
                     <h1> <img src={profilepic || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr6YuCw0GMFKM9-iKAqeENot3qCQz_cJG3fu-NszuDAJp2wU0kTA0EFF9CyMDqKhWg18b4aK7eJj4&usqp=CAU&ec=48600112'} onClick={()=>{setprofilemenu(!profilemenu)}} className="absolute translate-x-[-70px] rounded-full w-12 h-12 translate-y-[-30px] cursor-pointer"  alt="" /> </h1>
                     {
                       profilemenu?
-                      <ul className=' text-center absolute border-[1px] border-white rounded-md translate-x-[-180px] translate-y-[20px] z-40 bg-pink-500 h-fit  w-44  '>
+                      <ul className=' text-center absolute border-[1px] border-white rounded-md translate-x-[-180px] translate-y-[20px] z-40 bg-yellow-500 h-fit  w-44  '>
                       <li className='hover:bg-yellow-700 w-full  rounded py-3   right-8  text-white font-semibold text-lg'>
                        {name}
                       </li>
@@ -77,14 +77,14 @@ function Header2() {
                       </li>
                       <li><hr /></li>
                       <li>
-                      <button onClick={signout} className="hover:bg-[#dd2562] w-full  rounded py-3  right-8  text-white font-semibold text-lg">Sign out</button>
+                      <button onClick={signout} className="hover:bg-yellow-700 w-full  rounded py-3  right-8  text-white font-semibold text-lg">Sign out</button>
                       </li>
                       </ul>
                       :null
                     }
                   </div>
                   :
-                  <button onClick={() => { history.push('/login') }} className="hover:bg-[#dd2562] border border-white rounded py-1 px-6  right-8  text-white font-semibold text-lg">Sign In</button>
+                  <button onClick={() => { history.push('/login') }} className="hover:bg-yellow-700 border border-white rounded py-1 px-6  right-8  text-white font-semibold text-lg">Sign In</button>
               }
             </div>
           </div>
@@ -95,7 +95,7 @@ function Header2() {
         <img className='h-40 w-60 translate-x-[-230px] ' src="https://ik.imagekit.io/cmef8hxb6/1_Transparent_Image_VWmbhlojN.png?updatedAt=1681756446542" alt="" />
         </a>
 
-          <button onClick={toggleMenu} className="inline-flex items-center justify-center p-2 rounded-md text-white font-semibold text-lg hover:text-white hover:bg-[#dd2562] " aria-expanded="false">
+          <button onClick={toggleMenu} className="inline-flex items-center justify-center p-2 rounded-md text-white font-semibold text-lg hover:text-white hover:bg-yellow-500 " aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             <svg className={`${menuOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -111,15 +111,15 @@ function Header2() {
 
     <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`}>
       <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-      <a to="/" href='/'  className=" hover:bg-[#dd2562] hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Home</a>
+      <a to="/" href='/'  className=" hover:bg-yellow-500 hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Home</a>
      
       
-      <a to="/" href='/invite'  className=" hover:bg-[#dd2562] hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Save the date</a>
-      <a to="/" href='/photobooth'  className=" hover:bg-[#dd2562] hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Photo Booth</a>
+      <a to="/" href='/invite'  className=" hover:bg-yellow-500 hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Save the date</a>
+      <a to="/" href='/photobooth'  className=" hover:bg-yellow-500 hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Photo Booth</a>
 
         {
           loged ?
-            <button onClick={signout} className="hover:bg-[#dd2562] border border-white rounded py-1 px-6  right-8  text-white font-semibold text-lg">Sign out</button>
+            <button onClick={signout} className="hover:bg-yellow-500 border border-white rounded py-1 px-6  right-8  text-white font-semibold text-lg">Sign out</button>
             :
             <button onClick={() => { history.push('/login') }} className="hover:bg-[#dd2562] border border-white rounded py-1 px-6  right-8  text-white font-semibold text-lg">Sign In</button>
         }

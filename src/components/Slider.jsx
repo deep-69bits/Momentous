@@ -71,7 +71,7 @@ const FeedbackSlider = () => {
 
   return (
     <div className="py-32 px-10 ">
-    <h1 className='px-10 font-light  text-[#0404c2] fonthead text-6xl ' >About Us</h1>
+    <h1 className='px-10 font-light  text-sky-800  fonthead text-6xl ' >About Us</h1>
     <h3 className='px-10 paratext' >Checkout the valuable feedbacks and reviwes by our customer</h3>
      <div className="my-16 hidden lg:block">
      <img src="./images/photobooth images/photobooth2.png"
