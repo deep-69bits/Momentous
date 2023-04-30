@@ -17,7 +17,9 @@ const SignUp = () => {
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
   const [confirmpassword,setConfirmPassword]=useState('')
+  const [errormessage,setErrorMessage]=useState('')
   const [load,setLoad]=useState('')
+  const [def,setDef]=useState(false)
   const auth = getAuth(app);
    
   const signup=()=>{
@@ -42,7 +44,42 @@ const SignUp = () => {
       });
     }
   }
-
+  const specialchar=[
+    '~','`',`!`,`@`,'#','$','%','^','&','*','(',')','_','-','?','}','{','[',']','<','>','/'
+  ]
+  const capital=[
+    'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'
+  ]
+  const numbers=[
+    '1','2','3','4','5','6','7','8','9','0'
+  ]
+  const checkingpassword=(e)=>{
+    setPassword(e.target.value)
+    setLoad('')
+    let a=0,b=0,c=0;
+    for(let i=0;i<password.length;i++){
+       let ch=password[i];
+       specialchar.forEach(element => {
+          if(element===ch){a=1;}
+       });
+       capital.forEach(element => {
+        if(element===ch){b=1;}
+       });
+       numbers.forEach(element => {
+        if(element===ch){c=1;}
+       });  
+    }
+    console.log(a," ",b," ",c)
+    if(a!=1 || b!=1 || c!=1 || password.length<8){
+      setErrorMessage("Passowrd must contain a special character/number/capital letter and lenght greator than 7... ")
+      setDef(false)
+    }
+    else{
+      setErrorMessage('')
+      setDef(true)
+    }
+   
+  }
   useEffect(()=>{
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -131,15 +168,11 @@ const SignUp = () => {
                       id="exampleFormControlInput11"
                       placeholder="Password" 
                       value={password}
-                      onChange={
-                        (e)=>{
-                          setPassword(e.target.value)
-                          setLoad('')
-                        }
-                      }
+                      onChange={checkingpassword}
                       />
                    
                   </div>
+                  <span className='text-sm text-red-500 mx-8 translate-y-[-5px]'>{errormessage}</span>
 
                   <div className="relative mb-4 mt-2" data-te-input-wrapper-init>
                   <label for="1" class="block px-2 my-2 w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">Confirm Password</label>
@@ -161,6 +194,9 @@ const SignUp = () => {
 
                  
                   <div className="mb-12 pb-1 pt-1 text-center">
+
+                   {
+                    def?
                     <button
                       onClick={signup}
                       className="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] bg-pink-500 text-white"
@@ -169,6 +205,18 @@ const SignUp = () => {
                       data-te-ripple-color="light">
                       SIGNUP
                     </button>
+                    :
+                    <button
+                      onClick={signup}
+                      className="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] bg-pink-300 text-white"
+                      type="button"
+                      disabled={true}
+                      data-te-ripple-init
+                      data-te-ripple-color="light">
+                      SIGNUP
+                    </button>
+                   }
+                   
 
                     
                    

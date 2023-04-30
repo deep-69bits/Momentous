@@ -98,7 +98,7 @@ function Header() {
           <img className='h-40 w-60 translate-x-[-230px] ' src="https://ik.imagekit.io/cmef8hxb6/1_Transparent_Image_VWmbhlojN.png?updatedAt=1681756446542" alt="" />
           </a>
 
-            <button onClick={toggleMenu} className="inline-flex items-center justify-center p-2 rounded-md text-white font-semibold text-lg hover:text-white hover:bg-[#dd2562] " aria-expanded="false">
+            <button onClick={toggleMenu} className="inline-flex items-center justify-center p-2 rounded-md text-white font-semibold text-lg hover:text-white  " aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               <svg className={`${menuOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -113,7 +113,7 @@ function Header() {
 
 
       <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 grid grid-flow-row grid-cols-1">
         <a to="/" href='/'  className=" hover:bg-[#dd2562] hover:text-white px-3 py-2 rounded-md  text-white font-semibold text-lg">Home</a>
        
         

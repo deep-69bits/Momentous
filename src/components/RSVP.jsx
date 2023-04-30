@@ -9,20 +9,23 @@ export default function RSVP(){
              RSVP
              </h1>
              <p className="text-xl">
-             I, <input type="text" className="border-[1px] text-gray-500 border-gray-400 focus:outline-none w-[200px] py-1 px-2 mx-3"   /> am 
+             I,  <br className="lg:hidden block" /> <input type="text" className="border-[1px] text-gray-500 border-gray-400 focus:outline-none w-[200px] py-1 px-2 mx-3"   /> am  
+             <br className="lg:hidden block" />
              <select name="" className="bg-white border-[1px] text-gray-500 border-gray-400 h-10 focus:outline-none w-[200px] py-1 px-2 mx-3" id="">
              <option  className="border-[1px]" value="">Attending</option>
              
              </select>
-             <br />
-             <br />
+             <br className="lg:hidden block" />
+             <br  />
              and i am bringing
-             <select name="" className="bg-white border-[1px] text-gray-500 border-gray-400 h-10 focus:outline-none w-[200px] py-1 px-2 mx-3" id="">
+             
+             <select name="" className="bg-white border-[1px] text-gray-500 border-gray-400 h-10 focus:outline-none w-[200px] py-1 px-2 mx-3 " id="">
              <option  className="border-[1px] text-gray-500" value="">One Person</option>
              <option  className="border-[1px] text-gray-500" value="">Two Persons</option>
              <option  className="border-[1px] text-gray-500" value="">Three  Persons</option>
              <option  className="border-[1px] text-gray-500" value="">Four Persons</option>
              </select>
+             <br className="lg:hidden block" />
              with me.
              </p>
                

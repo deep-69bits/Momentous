@@ -20,6 +20,8 @@ function Page1() {
   const queryParameters = new URLSearchParams(window.location.search)
   const email = queryParameters.get("email")
   console.log(email)
+
+  
   const db = getFirestore(app);
 
   const [rsvp, setrsvp] = useState(true)
@@ -28,7 +30,7 @@ function Page1() {
   const [date, setDate] = useState(null)
   const [addres, setAdress] = useState('This Address, Street 71,Amsterdam')
   const [topgallery, setTopgalley] = useState([])
-  const [itinerary, setIntinerary] = useState([])
+  const [itinerary, setIntinerary] = useState(null)
   const [spinner, setSpineer] = useState(true)
 
   useEffect(() => {
@@ -69,6 +71,25 @@ function Page1() {
 
   }, [])
 
+
+   const intti=[
+     {
+      time:"10am",
+      title:"Party",
+      description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+     },
+     {
+      time:"10am",
+      title:"Party",
+      description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+     },
+     {
+      time:"10am",
+      title:"Party",
+      description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+     },
+   ]
+
   if (spinner) {
     return (
       <motion.div
@@ -108,7 +129,7 @@ function Page1() {
 
         <Carousel Gallery={topgallery} />
         <Countdown date={date} address={addres} />
-        <Itinerary date={date} itinerary={itinerary} />
+        <Itinerary date={date} itinerary={itinerary || intti} />
         {
 
           <Gallery Gallery={topgallery} />
