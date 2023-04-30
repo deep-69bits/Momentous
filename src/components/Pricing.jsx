@@ -110,7 +110,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="translate-y-[-200px]">
+    <div className="translate-y-[-400px]">
     <hr  className="lg:w-[85%]  w-full m-auto" />
       <div className="h-1/3 py-20   md:text-6xl text-4xl text-sky-800 font-serif text-center">
       <span className="fonthead">

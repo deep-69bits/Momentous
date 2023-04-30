@@ -53,11 +53,11 @@ export default function SpiralImages() {
   return (
     <div>
     <div className="">
-    <h1 className="-z-50 top-20 opacity-40 fonthead text-[200px] text-yellow-600  text-center ">PhotoBooth</h1>
+    <h1 className="-z-50 pt-20 opacity-40 fonthead text-7xl lg:text-[200px] text-yellow-600  text-center ">PhotoBooth</h1>
     </div>
     <img src="./Thread.png" className="absolute z-20 top-36" alt="" />
     <div
-      className="pt-60 z-20 relative grid grid-rows-2  translate-y-[-240px] bg-contain bg-center  "
+      className="pt-60 z-20 relative grid grid-rows-2  lg:translate-y-[-240px] translate-y-[-140px] bg-contain bg-center  "
     > 
       <div  >
       <div className="row-span-2 grid md:grid-cols-5 grid-cols-2 gap-x-8 md:mx-10 mx-4 md:mt-8 md:pb-2">
@@ -113,8 +113,8 @@ export default function SpiralImages() {
 
         </div>
 
-        </div>
-        <p className="paratext  text-black text-center pb-10">
+        </div >
+        <p className="paratext  translate-y-20 text-black text-center pb-10">
         Enjoy the most cherishable moments of the events that are <br /> hand-curated and arranged in a picture gallery.
         </p>
         </div>
