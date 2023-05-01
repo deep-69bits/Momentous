@@ -181,6 +181,10 @@ const Form = () => {
                     date: eventdate,
                     gallery: needpics,
                     rsvp: rsvp,
+                    address: eventadress,
+                    pics: gallery,
+                    itinerary: itinerary,
+                    itineraryfields: formfields
 
                 });
                 console.log(docref)
