@@ -312,7 +312,7 @@ const Form = () => {
          {
              itinerary ?
                  <div className='lg:w-2/4 w-full bg my-10 m-auto '>
-                     {
+                     { formfields!=undefined &&
                          formfields.map((item, index) => {
                              return (
                                  <div key={index} className="my-8 rounded-md shadow-lg transition-all hover:scale-105  duration-500 cursor-pointer px-4 py-10 shadow-pink-200" >
