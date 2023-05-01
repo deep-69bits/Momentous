@@ -32,6 +32,8 @@ function Page1() {
   const [topgallery, setTopgalley] = useState([])
   const [itinerary, setIntinerary] = useState(null)
   const [spinner, setSpineer] = useState(true)
+  const [needint,setNeedint]=useState(true)
+  const [needgallery,setNeedgalley]=useState(true)
 
   useEffect(() => {
 
@@ -57,6 +59,8 @@ function Page1() {
         setTopgalley(data)
 
         setIntinerary(docSnap.data()?.itineraryfields)
+        setNeedint(docSnap.data()?.itinerary)
+        setNeedgalley(docSnap.data()?.Gallery)
 
 
 
@@ -127,12 +131,19 @@ function Page1() {
        
         <HeroSection groom={groom} bride={bride} />
 
-        <Carousel Gallery={topgallery} />
-        <Countdown date={date} address={addres} />
-        <Itinerary date={date} itinerary={itinerary || intti} />
+
         {
 
-          <Gallery Gallery={topgallery} />
+         needgallery && <Carousel Gallery={topgallery} />
+        }
+        <Countdown date={date} address={addres} />
+        {
+         
+          needint && <Itinerary date={date} itinerary={itinerary || intti} />
+        }
+        {
+
+          needgallery && <Gallery Gallery={topgallery} />
         }
         {
           rsvp ?

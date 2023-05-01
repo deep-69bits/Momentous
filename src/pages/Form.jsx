@@ -64,7 +64,8 @@ const Form = () => {
                         setbride(docSnap.data().bride)
                         SetEventAdress(docSnap.data().address)
                         setRsvp(docSnap.data().rsvp)
-                        setFromfields(docSnap.data().itineraryfields)
+                        console.log(docSnap.data().itineraryfields)
+                        setFromfields(docSnap.data().itineraryfields || [])
                         // setSelectedImages(docSnap.data().pics)
                         setSpineer(false)
                     } else {
