@@ -59,8 +59,8 @@ function Page1() {
         setTopgalley(data)
 
         setIntinerary(docSnap.data()?.itineraryfields)
-        setNeedint(docSnap.data()?.itinerary)
-        setNeedgalley(docSnap.data()?.Gallery)
+        setNeedint(docSnap.data()?.itinerary || true)
+        setNeedgalley(docSnap.data()?.Gallery || true)
 
 
 
