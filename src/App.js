@@ -6,6 +6,7 @@ import Page3 from './pages/page3'
 import Form from './pages/Form';
 import SignUp from './pages/SignUp';
 import LogIn from './pages/LogIn';
+import OurPics from './components/OurPics';
 import ForgetPassword from './pages/ForgetPassword'
 import { AnimatePresence } from "framer-motion";
 function App() {
@@ -22,6 +23,9 @@ function App() {
                 </Route>
                 <Route path="/photobooth">
                   <Page2/>
+                </Route>
+                <Route path="/gallery">
+                  <OurPics/>
                 </Route>
                 <Route path="/invite">
                   <Page1/>
